@@ -1,0 +1,37 @@
+.advantage {
+  padding: 150px 0;
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-item {
+    text-align: center;
+    padding: 0px 24px;
+  }
+  &-item:nth-child(2) {
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+  &-img {
+    width: 160px;
+    height: 145px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    margin: 28px 0px;
+    color: $text-title-color;
+    font-size: $size-small-title;
+  }
+  @media screen and (max-width: 768px) {
+    &-container {
+      display: block;
+    }
+    &-item:nth-child(2) {
+      border: none;
+      margin: 68px 0px;
+    }
+  }
+}

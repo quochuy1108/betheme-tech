@@ -1,0 +1,86 @@
+.learn {
+  background-image: url("../images/bgr.jpg");
+  height: 740px;
+  &-container {
+    text-align: center;
+    padding-top: 115px;
+  }
+
+  &-slogan {
+    color: $text-white-color;
+    font-size: 14px;
+  }
+  &-title {
+    color: $primary-color;
+    font-size: $size-big-title;
+    padding: 20px 0px;
+  }
+  &-list {
+    padding-top: 36px;
+    flex-wrap: wrap;
+    display: flex;
+    // justify-content: space-between;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 18px;
+    border-bottom: 1px solid $border-white-color;
+  }
+  &-item:hover {
+    background-color: $primary-color;
+  }
+  &-item:hover &-icon {
+    color: $text-white-color;
+  }
+  &-item:nth-child(9),
+  &-item:nth-child(10),
+  &-item:nth-child(11) {
+    border-bottom: none;
+  }
+  &-icon {
+    color: $primary-color;
+    margin-right: 16px;
+    transition: 0.3s;
+    font-size: 36px;
+  }
+  &-content {
+    color: $text-white-color;
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      height: 1400px;
+    }
+    &-list {
+      display: block;
+    }
+    &-item {
+      border: none;
+    }
+    &-btn {
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    &-slogan {
+      font-size: 12px;
+    }
+    &-title {
+      font-size: 32px;
+    }
+    &-item {
+      font-size: 14px;
+    }
+  }
+}

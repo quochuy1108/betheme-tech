@@ -1,0 +1,46 @@
+.buy {
+  height: 190px;
+  background-color: $border-color;
+  background-image: url("../images/portolio-bgr.png");
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-content {
+    font-size: 28px;
+  }
+  &-icon {
+    color: $primary-color;
+  }
+  @media screen and (max-width: 1200px) {
+    &-content {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    & {
+      height: 250px;
+    }
+    &-container {
+      display: block;
+      top: 42%;
+    }
+    &-content {
+      font-size: 28px;
+    }
+    .btn {
+      float: right;
+      margin-top: 12px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    &-content {
+      font-size: 16px;
+    }
+  }
+}

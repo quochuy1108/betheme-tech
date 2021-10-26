@@ -1,0 +1,21 @@
+.portfolio {
+  height: 160px;
+  background-image: url("../images/portolio-bgr.png");
+  background-color: $primary-color;
+  &-container {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-white-color;
+  }
+  &-text {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 460px) {
+    &-text {
+      font-size: 28px;
+    }
+  }
+}
